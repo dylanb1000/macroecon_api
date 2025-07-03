@@ -1,0 +1,6 @@
+fredapi
+Flask
+SQLAlchemy
+pymysql
+pandas
+cryptography
