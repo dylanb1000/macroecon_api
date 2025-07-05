@@ -2,9 +2,9 @@ from fredapi import Fred
 from sqlalchemy import create_engine
 from sqlalchemy.types import String
 import pandas as pd
-import sys
+import os
 
-fred = Fred(api_key=sys.argv[1])
+fred = Fred(api_key=os.getenv("FRED_API_KEY"))
 
 symbols = [
     "GDP",               
