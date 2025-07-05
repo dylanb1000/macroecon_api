@@ -3,9 +3,9 @@ from sqlalchemy import create_engine
 from sqlalchemy.types import String
 import pandas as pd
 import os
-
-fred = Fred(api_key=os.getenv("FRED_API_KEY"))
-
+api = os.getenv("FRED_API_KEY")
+print(api)
+fred = Fred(api_key=api)
 symbols = [
     "GDP",               
     "PAYEMS",            
